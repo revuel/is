@@ -28,6 +28,7 @@ namespace paintball
         private int equipo;
         private bool vivo;
         private string id;
+        private int arma; // ARMA
 
         /* -------------------------------------- CONSTRUCTOR -------------------------------------- */
         // Vacío
@@ -119,55 +120,90 @@ namespace paintball
             this.id = id;
         }
 
+        //---------------------------------ARMA------------------
+        public int getArma()
+        {
+            return arma;
+        }
+
+        public void setArma(int arma)
+        {
+            this.arma = arma;
+        }
         /* ---------------------------------------- MÉTODOS ---------------------------------------- */
             // avanzar a la proxima posición
         public void mover(int turno)
         {
             // Variables del método:
             int aux;
-            aux = rand.Next(0, 8); // Posición aleatoria a la que moverse
-
-            if (vivo == true) // Mueve solo a los que estén vivos
+            
+            // DIVISIÓN DE MOVIMIENTOS RANDOM SEGÚN EQUIPO
+            if(equipo==0)
             {
-                switch (aux)
+                //MOVIENTOS NORTE,NORESTE,ESTE,SURESTE Y SUR
+                aux = rand.Next(0,5);
+                if (vivo == true) // Mueve solo a los que estén vivos
                 {
-                    case 0: // Noroeste
-                        posx -= paso / 2;
-                        posy -= paso / 2;
-                        break;
-                    case 1: // Norte
-                        posy -= paso;
-                        break;
-                    case 2: // Noreste
-                        posx += paso / 2;
-                        posy -= paso / 2;
-                        break;
-                    case 3: // Este
-                        posx += paso;
-                        break;
-                    case 4: // Sureste
-                        posx += paso / 2;
-                        posy += paso / 2;
-                        break;
-                    case 5: // Sur
-                        posy += paso;
-                        break;
-                    case 6: // Suroeste
-                        posx -= paso / 2;
-                        posy += paso / 2;
-                        break;
-                    case 7: // Oeste
-                        posx -= paso;
-                        break;
-                    default:
-                        break;
+                    switch (aux)
+                    {
+                        case 0: // Norte
+                            posy -= paso;
+                            break;
+                        case 1: // Noreste
+                            posx += paso / 2;
+                            posy -= paso / 2;
+                            break;
+                        case 2: // Este
+                            posx += paso;
+                            break;
+                        case 3: // Sureste
+                            posx += paso / 2;
+                            posy += paso / 2;
+                            break;
+                        case 4: // Sur
+                            posy += paso;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }else if (equipo==1)
+            {
+                //MOVIMIENTOS NORTE,NOROESTE,OESTE,SUROESTE Y SUR
+                aux = rand.Next(0, 5);
+                if (vivo == true) // Mueve solo a los que estén vivos
+                {
+                    switch (aux)
+                    {
+                        case 0: // Norte
+                            posy -= paso;                        
+                            break;
+                        case 1: // Noroeste
+                            posx -= paso / 2;
+                            posy -= paso / 2;                        
+                            break;
+                        case 2: // Oeste
+                            posx -= paso;
+                            break;
+                        case 3: // Suroeste
+                            posx -= paso / 2;
+                            posy += paso / 2;
+                            break;
+                        case 4: // Sur
+                            posy += paso;
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
+           
+
             // Para no salirse del canvas (canvas: horizontal es X=800, vertical es Y=500)
-            if (posx < 5) posx = 5;
-            if (posy < 5) posy = 5; // Dejamos algo de espacio antes de los valores del tamaño del canvas
-            if (posx > 795) posy = 795;
-            if (posy > 495) posy = 495;
+            if (posx < 25) posx = 25;
+            if (posy < 25) posy = 25; // Dejamos algo de espacio antes de los valores del tamaño del canvas
+            if (posx > 775) posx = 775;
+            if (posy > 475) posy = 475;
         }
 
         // Circulo que representa al jugador
@@ -212,6 +248,23 @@ namespace paintball
             circulo.HorizontalAlignment = HorizontalAlignment.Center;
             circulo.VerticalAlignment = VerticalAlignment.Center;
             picture.Children.Add(circulo);
+        }
+
+        //CIRCUNFERENCIA QUE REPRESENTA EL ALCANCE DEL ARMA
+        public void dibujarArma(Canvas picture)
+        {
+            int alcance;
+            alcance = 15 * arma;
+            Ellipse circulo = new Ellipse();
+            circulo.Stroke = Brushes.DarkOrange;
+            circulo.Width = alcance * 2;
+            circulo.Height= alcance * 2;
+            Canvas.SetTop(circulo, posy - alcance);
+            Canvas.SetLeft(circulo, posx - alcance);
+            circulo.HorizontalAlignment = HorizontalAlignment.Center;
+            circulo.VerticalAlignment = VerticalAlignment.Center;
+            picture.Children.Add(circulo);
+
         }
         
     }

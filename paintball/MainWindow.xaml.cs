@@ -74,9 +74,15 @@ namespace paintball
             foreach (Jugador nuevo in jugadores)
             {
                 nuevo.dibujarJugador(picture);
-                nuevo.dibujarInflu(picture); // Dibujar jugadores
-                nuevo.dibujarVision(picture);
-                nuevo.mover(contador); // Movimiento del jugador
+
+                if (nuevo.getVivo() == true)
+                {
+                    nuevo.dibujarInflu(picture); // Dibujar jugadores
+                    nuevo.dibujarVision(picture);
+                    nuevo.dibujarArma(picture);     
+                }
+
+                nuevo.mover(contador); // Movimiento del jugador }
 
                 // Imprimir posicion actual del jugador del combobox
                 if (nuevo.getId().ToString() == comboBox1.Text.ToString())
