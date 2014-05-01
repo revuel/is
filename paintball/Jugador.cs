@@ -28,7 +28,7 @@ namespace paintball
         private int equipo;
         private bool vivo;
         private string id;
-        private int arma; // ARMA
+        private int arma; // solo es un arma vale
 
         /* -------------------------------------- CONSTRUCTOR -------------------------------------- */
         // Vacío
