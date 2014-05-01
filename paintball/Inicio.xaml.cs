@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace paintball
 {
@@ -19,6 +20,8 @@ namespace paintball
         /* -------------------------------------- ATRIBUTOS -------------------------------------- */
         List<Jugador> jugadores = new List<Jugador>();
         List <int> secmovimientos = new List<int>(); // Almacenamiento de los movimientos. (not working)
+
+        Random rand = new Random();
         
         /* ------------------------------------- CONSTRUCTORES ------------------------------------ */
         public Window1()
@@ -84,54 +87,59 @@ namespace paintball
                         nuevo.setPosy(50);
                         break;
                     case 1:
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(50);
+                        nuevo.setPosx(50);
+                        nuevo.setPosy(175);
                         break;
                     case 2:
-                        nuevo.setPosx(300);
-                        nuevo.setPosy(50);
+                        nuevo.setPosx(50);
+                        nuevo.setPosy(300);
                         break;
                     case 3:
-                        nuevo.setPosx(100);
-                        nuevo.setPosy(150);
+                        nuevo.setPosx(125);
+                        nuevo.setPosy(100);
                         break;
                     case 4:
-                        nuevo.setPosx(250);
-                        nuevo.setPosy(150);
+                        nuevo.setPosx(125);
+                        nuevo.setPosy(250);
                         break;
                     case 5:
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(150);
+                        nuevo.setPosx(125);
+                        nuevo.setPosy(175);
                         break;
                     case 6:
-                        nuevo.setPosx(50);
-                        nuevo.setPosy(475);
+                        nuevo.setPosx(575);
+                        nuevo.setPosy(50);
                         break;
                     case 7:
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(475);
+                        nuevo.setPosx(575);
+                        nuevo.setPosy(175);
                         break;
                     case 8:
-                        nuevo.setPosx(300);
-                        nuevo.setPosy(475);
+                        nuevo.setPosx(575);
+                        nuevo.setPosy(300);
                         break;
                     case 9:
-                        nuevo.setPosx(100);
-                        nuevo.setPosy(375);
+                        nuevo.setPosx(475);
+                        nuevo.setPosy(100);
                         break;
                     case 10:
-                        nuevo.setPosx(250);
-                        nuevo.setPosy(375);
+                        nuevo.setPosx(475);
+                        nuevo.setPosy(250);
                         break;
                     case 11:
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(375);
+                        nuevo.setPosx(475);
+                        nuevo.setPosy(175);
                         break;
                     default:
                         break;
                 }
 
+                int auxiliar_arma;
+                auxiliar_arma = rand.Next(1, 4);
+                nuevo.setArma(auxiliar_arma);
+
                 // Añadiendo el jugador al vector de jugadores
+                Thread.Sleep(10);
                 jugadores.Add(nuevo);
             }
         }

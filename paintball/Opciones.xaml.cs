@@ -119,39 +119,39 @@ namespace paintball
                         nuevo.setPosy(300);
                         break;
                     case "3":
-                        nuevo.setPosx(100);
+                        nuevo.setPosx(125);
                         nuevo.setPosy(100);
                         break;
                     case "4":
-                        nuevo.setPosx(100);
+                        nuevo.setPosx(125);
                         nuevo.setPosy(250);
                         break;
                     case "5":
-                        nuevo.setPosx(100);
+                        nuevo.setPosx(125);
                         nuevo.setPosy(175);
                         break;
                     case "6":
-                        nuevo.setPosx(475);
+                        nuevo.setPosx(575);
                         nuevo.setPosy(50);
                         break;
                     case "7":
-                        nuevo.setPosx(475);
+                        nuevo.setPosx(575);
                         nuevo.setPosy(175);
                         break;
                     case "8":
-                        nuevo.setPosx(475);
+                        nuevo.setPosx(575);
                         nuevo.setPosy(300);
                         break;
                     case "9":
-                        nuevo.setPosx(375);
+                        nuevo.setPosx(475);
                         nuevo.setPosy(100);
                         break;
                     case "10":
-                        nuevo.setPosx(375);
+                        nuevo.setPosx(475);
                         nuevo.setPosy(250);
                         break;
                     case "11":
-                        nuevo.setPosx(375);
+                        nuevo.setPosx(475);
                         nuevo.setPosy(175);
                         break;
                     default:

@@ -19,7 +19,7 @@
         <Canvas Name="picture" Grid.RowSpan="5" Margin="0,0,0,2" HorizontalAlignment="Right" Width="800" Background="#FFC9E7C9" Grid.Column="1" MaxWidth="800" Height="500" MaxHeight="500"></Canvas>
         <ListBox Name="listBox1" Margin="0,28,0,151" MaxWidth="400" HorizontalAlignment="Left" VerticalAlignment="Center" Height="133" Width="94" Grid.Column="1" />
         <Label Content="Label" HorizontalAlignment="Left" Margin="26,196,0,88" Name="label1" Grid.Column="1" />
-        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="26,221,0,0" Name="label2" VerticalAlignment="Top" Grid.Column="1" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="26,0,0,88" Name="label2" VerticalAlignment="Bottom" Grid.Column="1" />
         <Label Content="X =" Height="28" HorizontalAlignment="Left" Margin="0,196,0,0" Name="label3" VerticalAlignment="Top" Grid.Column="1" />
         <Label Content="Y =" Height="28" HorizontalAlignment="Left" Name="label4" VerticalAlignment="Top" Margin="0,221,0,0" Grid.Column="1" />
         <Label Content="COORDENADAS:" Height="28" HorizontalAlignment="Left" Margin="0,179,0,0" Name="label5" VerticalAlignment="Top" Grid.Column="1" />
