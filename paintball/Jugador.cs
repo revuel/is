@@ -175,7 +175,7 @@ namespace paintball
         {
             int radio = 5;
             Ellipse circulo = new Ellipse();
-            if (equipo == 0) circulo.Fill = Brushes.Red;
+            if (equipo == 0) circulo.Fill = Brushes.Red; // Comentario aleatorio
             if (equipo == 1) circulo.Fill = Brushes.Blue;
             circulo.Width = radio * 2;
             circulo.Height = radio * 2;
