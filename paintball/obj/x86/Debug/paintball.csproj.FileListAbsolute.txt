@@ -15,3 +15,20 @@ c:\documents and settings\miguel\my documents\visual studio 2010\Projects\paintb
 c:\documents and settings\miguel\my documents\visual studio 2010\Projects\paintball\paintball\obj\x86\Debug\Inicio.g.cs
 c:\documents and settings\miguel\my documents\visual studio 2010\Projects\paintball\paintball\obj\x86\Debug\Opciones.baml
 c:\documents and settings\miguel\my documents\visual studio 2010\Projects\paintball\paintball\obj\x86\Debug\Opciones.g.cs
+C:\Users\Fer\is\paintball\obj\x86\Debug\paintball.exe
+C:\Users\Fer\is\paintball\obj\x86\Debug\paintball.pdb
+C:\Users\Fer\is\paintball\bin\Debug\paintball.exe
+C:\Users\Fer\is\paintball\bin\Debug\paintball.pdb
+C:\Users\Fer\is\paintball\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Fer\is\paintball\obj\x86\Debug\MainWindow.baml
+C:\Users\Fer\is\paintball\obj\x86\Debug\Inicio.baml
+C:\Users\Fer\is\paintball\obj\x86\Debug\Opciones.baml
+C:\Users\Fer\is\paintball\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Fer\is\paintball\obj\x86\Debug\Inicio.g.cs
+C:\Users\Fer\is\paintball\obj\x86\Debug\Opciones.g.cs
+C:\Users\Fer\is\paintball\obj\x86\Debug\App.g.cs
+C:\Users\Fer\is\paintball\obj\x86\Debug\paintball_MarkupCompile.cache
+C:\Users\Fer\is\paintball\obj\x86\Debug\paintball.g.resources
+C:\Users\Fer\is\paintball\obj\x86\Debug\paintball.Properties.Resources.resources
+C:\Users\Fer\is\paintball\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Fer\is\paintball\obj\x86\Debug\GenerateResource.write.1.tlog

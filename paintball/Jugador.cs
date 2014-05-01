@@ -125,44 +125,69 @@ namespace paintball
         {
             // Variables del método:
             int aux;
-            aux = rand.Next(0, 8); // Posición aleatoria a la que moverse
-
-            if (vivo == true) // Mueve solo a los que estén vivos
+            
+            //DIVISIÓN DE MOVIMIENTOS RANDOM SEGÚN EQUIPO
+            if(equipo==0)
             {
-                switch (aux)
+                //MOVIENTOS NORTE,NORESTE,ESTE,SURESTE Y SUR
+                aux = rand.Next(0,5);
+                if (vivo == true) // Mueve solo a los que estén vivos
                 {
-                    case 0: // Noroeste
-                        posx -= paso / 2;
-                        posy -= paso / 2;
-                        break;
-                    case 1: // Norte
-                        posy -= paso;
-                        break;
-                    case 2: // Noreste
-                        posx += paso / 2;
-                        posy -= paso / 2;
-                        break;
-                    case 3: // Este
-                        posx += paso;
-                        break;
-                    case 4: // Sureste
-                        posx += paso / 2;
-                        posy += paso / 2;
-                        break;
-                    case 5: // Sur
-                        posy += paso;
-                        break;
-                    case 6: // Suroeste
-                        posx -= paso / 2;
-                        posy += paso / 2;
-                        break;
-                    case 7: // Oeste
-                        posx -= paso;
-                        break;
-                    default:
-                        break;
+                    switch (aux)
+                    {
+                        case 0: // Norte
+                            posy -= paso;
+                            break;
+                        case 1: // Noreste
+                            posx += paso / 2;
+                            posy -= paso / 2;
+                            break;
+                        case 2: // Este
+                            posx += paso;
+                            break;
+                        case 3: // Sureste
+                            posx += paso / 2;
+                            posy += paso / 2;
+                            break;
+                        case 4: // Sur
+                            posy += paso;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }else if (equipo==1)
+            {
+                //MOVIMIENTOS NORTE,NOROESTE,OESTE,SUROESTE Y SUR
+                aux = rand.Next(0, 5);
+                if (vivo == true) // Mueve solo a los que estén vivos
+                {
+                    switch (aux)
+                    {
+                        case 0: // Norte
+                            posy -= paso;                        
+                            break;
+                        case 1: // Noroeste
+                            posx -= paso / 2;
+                            posy -= paso / 2;                        
+                            break;
+                        case 2: // Oeste
+                            posx -= paso;
+                            break;
+                        case 3: // Suroeste
+                            posx -= paso / 2;
+                            posy += paso / 2;
+                            break;
+                        case 4: // Sur
+                            posy += paso;
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
+           
+
             // Para no salirse del canvas (canvas: horizontal es X=800, vertical es Y=500)
             if (posx < 5) posx = 5;
             if (posy < 5) posy = 5; // Dejamos algo de espacio antes de los valores del tamaño del canvas
