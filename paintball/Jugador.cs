@@ -137,7 +137,7 @@ namespace paintball
             // Variables del método:
             int aux;
             
-            //DIVISIÓN DE MOVIMIENTOS RANDOM SEGÚN EQUIPO
+            // DIVISIÓN DE MOVIMIENTOS RANDOM SEGÚN EQUIPO
             if(equipo==0)
             {
                 //MOVIENTOS NORTE,NORESTE,ESTE,SURESTE Y SUR
@@ -200,10 +200,10 @@ namespace paintball
            
 
             // Para no salirse del canvas (canvas: horizontal es X=800, vertical es Y=500)
-            if (posx < 5) posx = 5;
-            if (posy < 5) posy = 5; // Dejamos algo de espacio antes de los valores del tamaño del canvas
-            if (posx > 795) posx = 795;
-            if (posy > 495) posy = 495;
+            if (posx < 25) posx = 25;
+            if (posy < 25) posy = 25; // Dejamos algo de espacio antes de los valores del tamaño del canvas
+            if (posx > 775) posx = 775;
+            if (posy > 475) posy = 475;
         }
 
         // Circulo que representa al jugador
