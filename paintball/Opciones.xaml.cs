@@ -18,7 +18,9 @@ namespace paintball
     /// </summary>
     public partial class Opciones : Window
     {
-
+        //------------------------------------VARIABLE RANDOM DEL ARMA
+        Random rand = new Random();
+        
         public Opciones()
         {
             InitializeComponent();
@@ -96,6 +98,11 @@ namespace paintball
                 nuevo.setVision(50);
                 nuevo.setInflu(25);
 
+                //-------------------------------ARMA-----------------
+                int auxiliar_arma;
+                auxiliar_arma = rand.Next(1, 4);
+                nuevo.setArma(auxiliar_arma);
+
                 nuevo.setMovs(secmovimientos);
 
                 // Posición inicial
@@ -106,48 +113,48 @@ namespace paintball
                         nuevo.setPosy(50);
                         break;
                     case "1":
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(50);
+                        nuevo.setPosx(50);
+                        nuevo.setPosy(175);
                         break;
                     case "2":
-                        nuevo.setPosx(300);
-                        nuevo.setPosy(50);
+                        nuevo.setPosx(50);
+                        nuevo.setPosy(300);
                         break;
                     case "3":
                         nuevo.setPosx(100);
-                        nuevo.setPosy(150);
+                        nuevo.setPosy(100);
                         break;
                     case "4":
-                        nuevo.setPosx(250);
-                        nuevo.setPosy(150);
+                        nuevo.setPosx(100);
+                        nuevo.setPosy(250);
                         break;
                     case "5":
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(150);
+                        nuevo.setPosx(100);
+                        nuevo.setPosy(175);
                         break;
                     case "6":
-                        nuevo.setPosx(50);
-                        nuevo.setPosy(475);
+                        nuevo.setPosx(475);
+                        nuevo.setPosy(50);
                         break;
                     case "7":
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(475);
+                        nuevo.setPosx(475);
+                        nuevo.setPosy(175);
                         break;
                     case "8":
-                        nuevo.setPosx(300);
-                        nuevo.setPosy(475);
+                        nuevo.setPosx(475);
+                        nuevo.setPosy(300);
                         break;
                     case "9":
-                        nuevo.setPosx(100);
-                        nuevo.setPosy(375);
+                        nuevo.setPosx(375);
+                        nuevo.setPosy(100);
                         break;
                     case "10":
-                        nuevo.setPosx(250);
-                        nuevo.setPosy(375);
+                        nuevo.setPosx(375);
+                        nuevo.setPosy(250);
                         break;
                     case "11":
-                        nuevo.setPosx(175);
-                        nuevo.setPosy(375);
+                        nuevo.setPosx(375);
+                        nuevo.setPosy(175);
                         break;
                     default:
                         break;

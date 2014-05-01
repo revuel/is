@@ -76,6 +76,8 @@ namespace paintball
                 nuevo.dibujarJugador(picture);
                 nuevo.dibujarInflu(picture); // Dibujar jugadores
                 nuevo.dibujarVision(picture);
+                //---------------------------------------------------------ARMA---------------------------------------
+                nuevo.dibujarArma(picture);
                 nuevo.mover(contador); // Movimiento del jugador
 
                 // Imprimir posicion actual del jugador del combobox
