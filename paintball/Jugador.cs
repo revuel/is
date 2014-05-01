@@ -137,7 +137,7 @@ namespace paintball
             // Variables del método:
             int aux;
             
-            //DIVISIÓN DE MOVIMIENTOS RANDOM SEGÚN EQUIPO
+            // DIVISIÓN DE MOVIMIENTOS RANDOM SEGÚN EQUIPO
             if(equipo==0)
             {
                 //MOVIENTOS NORTE,NORESTE,ESTE,SURESTE Y SUR
