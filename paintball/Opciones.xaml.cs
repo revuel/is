@@ -18,7 +18,9 @@ namespace paintball
     /// </summary>
     public partial class Opciones : Window
     {
-
+        //------------------------------------VARIABLE RANDOM DEL ARMA
+        Random rand = new Random();
+        
         public Opciones()
         {
             InitializeComponent();
@@ -95,6 +97,11 @@ namespace paintball
 
                 nuevo.setVision(50);
                 nuevo.setInflu(25);
+
+                //-------------------------------ARMA-----------------
+                int auxiliar_arma;
+                auxiliar_arma = rand.Next(1, 4);
+                nuevo.setArma(auxiliar_arma);
 
                 nuevo.setMovs(secmovimientos);
 

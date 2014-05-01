@@ -28,6 +28,7 @@ namespace paintball
         private int equipo;
         private bool vivo;
         private string id;
+        private int arma; // ARMA
 
         /* -------------------------------------- CONSTRUCTOR -------------------------------------- */
         // Vacío
@@ -119,6 +120,16 @@ namespace paintball
             this.id = id;
         }
 
+        //---------------------------------ARMA------------------
+        public int getArma()
+        {
+            return arma;
+        }
+
+        public void setArma(int arma)
+        {
+            this.arma = arma;
+        }
         /* ---------------------------------------- MÉTODOS ---------------------------------------- */
             // avanzar a la proxima posición
         public void mover(int turno)
@@ -237,6 +248,23 @@ namespace paintball
             circulo.HorizontalAlignment = HorizontalAlignment.Center;
             circulo.VerticalAlignment = VerticalAlignment.Center;
             picture.Children.Add(circulo);
+        }
+
+        //CIRCUNFERENCIA QUE REPRESENTA EL ALCANCE DEL ARMA
+        public void dibujarArma(Canvas picture)
+        {
+            int alcance;
+            alcance = 15 * arma;
+            Ellipse circulo = new Ellipse();
+            circulo.Stroke = Brushes.DarkOrange;
+            circulo.Width = alcance * 2;
+            circulo.Height= alcance * 2;
+            Canvas.SetTop(circulo, posy - alcance);
+            Canvas.SetLeft(circulo, posx - alcance);
+            circulo.HorizontalAlignment = HorizontalAlignment.Center;
+            circulo.VerticalAlignment = VerticalAlignment.Center;
+            picture.Children.Add(circulo);
+
         }
         
     }
