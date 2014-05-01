@@ -1,0 +1,9 @@
+﻿<Window x:Class="paintball.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Paintball IS" WindowStartupLocation="CenterOwner" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="201" Width="300">
+    <Grid>
+        <Button Content="Nueva partida" Height="23" HorizontalAlignment="Left" Margin="48,46,0,0" Name="button1" VerticalAlignment="Top" Width="179" Click="button1_Click" />
+        <Button Content="Salir" Height="23" HorizontalAlignment="Left" Margin="99,109,0,0" Name="button2" VerticalAlignment="Top" Width="80" Click="button2_Click" />
+    </Grid>
+</Window>
