@@ -202,7 +202,7 @@ namespace paintball
             // Para no salirse del canvas (canvas: horizontal es X=800, vertical es Y=500)
             if (posx < 5) posx = 5;
             if (posy < 5) posy = 5; // Dejamos algo de espacio antes de los valores del tamaño del canvas
-            if (posx > 795) posy = 795;
+            if (posx > 795) posx = 795;
             if (posy > 495) posy = 495;
         }
 
@@ -211,7 +211,7 @@ namespace paintball
         {
             int radio = 5;
             Ellipse circulo = new Ellipse();
-            if (equipo == 0) circulo.Fill = Brushes.Red;
+            if (equipo == 0) circulo.Fill = Brushes.Red; // Comentario aleatorio
             if (equipo == 1) circulo.Fill = Brushes.Blue;
             circulo.Width = radio * 2;
             circulo.Height = radio * 2;

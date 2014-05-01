@@ -13,9 +13,7 @@ using System.Windows.Shapes;
 
 namespace paintball
 {
-    /// <summary>
-    /// Interaction logic for Opciones.xaml
-    /// </summary>
+
     public partial class Opciones : Window
     {
         //------------------------------------VARIABLE RANDOM DEL ARMA
