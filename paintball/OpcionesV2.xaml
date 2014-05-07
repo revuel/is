@@ -1,0 +1,415 @@
+﻿<Window x:Class="paintball.OpcionesV2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Opciones" Height="500" Width="900">
+    <Grid>
+        <Button Content="Start" Height="23" HorizontalAlignment="Left" Margin="391,426,0,0" Name="button1" VerticalAlignment="Top" Width="107" Click="button1_Click" />
+        <Border BorderBrush="Silver" BorderThickness="1" Height="188" HorizontalAlignment="Left" Margin="13,35,0,0" Name="border1" VerticalAlignment="Top" Width="853"></Border>
+        <Border BorderBrush="Silver" BorderThickness="1" Height="187" HorizontalAlignment="Left" Margin="13,228,0,0" Name="border3" VerticalAlignment="Top" Width="854" />
+        <Label Content="Activo" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="label1" VerticalAlignment="Top" FontSize="16" FontWeight="Black" />
+        <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="80,0,0,0" Name="label2" VerticalAlignment="Top" FontSize="16" FontWeight="Black" />
+        <Label Content="Visión" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="190,0,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Influencia" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Right" Margin="0,0,515,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="Arma" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="391,0,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="Movimiento" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="611,0,0,0" Name="label6" VerticalAlignment="Top" />
+        <Grid Height="187" HorizontalAlignment="Left" Margin="12,0,0,239" Name="grid1" VerticalAlignment="Bottom" Width="854">
+            
+            <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,10,0,0" Name="activo1" VerticalAlignment="Top" Click="activo1_Click" />
+            <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,40,0,0" Name="activo2" VerticalAlignment="Top" Click="activo2_Click"/>
+            <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,70,0,0" Name="activo3" VerticalAlignment="Top" Click="activo3_Click"/>
+            <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,100,0,0" Name="activo4" VerticalAlignment="Top" Click="activo4_Click"/>
+            <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,130,0,0" Name="activo5" VerticalAlignment="Top" Click="activo5_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,160,0,0" Name="activo6" VerticalAlignment="Top" Click="activo6_Click"/>
+
+            <TextBox Height="23" Text="Jugador 1" HorizontalAlignment="Left" Margin="39,6,0,0" Name="nombre1" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 2" HorizontalAlignment="Left" Margin="39,36,0,0" Name="nombre2" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 3" HorizontalAlignment="Left" Margin="39,66,0,0" Name="nombre3" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 4" HorizontalAlignment="Left" Margin="39,96,0,0" Name="nombre4" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 5" HorizontalAlignment="Left" Margin="39,126,0,0" Name="nombre5" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 6" HorizontalAlignment="Left" Margin="39,156,0,0" Name="nombre6" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,6,0,0" Name="vision1" VerticalAlignment="Top" Width="46" Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,36,0,0" Name="vision2" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,66,0,0" Name="vision3" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,96,0,0" Name="vision4" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,126,0,0" Name="vision5" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,156,0,0" Name="vision6" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,6,0,0" Name="influencia1" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,36,0,0" Name="influencia2" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,66,0,0" Name="influencia3" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,96,0,0" Name="influencia4" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,126,0,0" Name="influencia5" VerticalAlignment="Top" Width="46" Text="20"  IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,156,0,0" Name="influencia6" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,6,0,0" Name="arma1" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,36,0,0" Name="arma2" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,66,0,0" Name="arma3" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,96,0,0" Name="arma4" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,126,0,0" Name="arma5" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,156,0,0" Name="arma6" VerticalAlignment="Top" Width="46"  Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+        </Grid>
+        <Grid Height="187" HorizontalAlignment="Left" Margin="13,228,0,0" Name="grid2" VerticalAlignment="Top" Width="853">
+
+            <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,10,0,0" Name="activo7" VerticalAlignment="Top" Click="activo7_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,40,0,0" Name="activo8" VerticalAlignment="Top" Click="activo8_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,70,0,0" Name="activo9" VerticalAlignment="Top" Click="activo9_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,100,0,0" Name="activo10" VerticalAlignment="Top" Click="activo10_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,130,0,0" Name="activo11" VerticalAlignment="Top" Click="activo11_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,160,0,0" Name="activo12" VerticalAlignment="Top" Click="activo12_Click"/>
+
+            <TextBox Height="23" Text="Jugador 7" HorizontalAlignment="Left" Margin="39,6,0,0" Name="nombre7" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 8" HorizontalAlignment="Left" Margin="39,36,0,0" Name="nombre8" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 9" HorizontalAlignment="Left" Margin="39,66,0,0" Name="nombre9" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 10" HorizontalAlignment="Left" Margin="39,96,0,0" Name="nombre10" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 11" HorizontalAlignment="Left" Margin="39,126,0,0" Name="nombre11" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+            <TextBox Height="23" Text="Jugador 12" HorizontalAlignment="Left" Margin="39,156,0,0" Name="nombre12" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,6,0,0" Name="vision7" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,36,0,0" Name="vision8" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,66,0,0" Name="vision9" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,96,0,0" Name="vision10" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,126,0,0" Name="vision11" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="183,156,0,0" Name="vision12" VerticalAlignment="Top" Width="46"  Text="50" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,6,0,0" Name="influencia7" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,36,0,0" Name="influencia8" VerticalAlignment="Top" Width="46" Text="20"  IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,66,0,0" Name="influencia9" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,96,0,0" Name="influencia10" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,126,0,0" Name="influencia11" VerticalAlignment="Top" Width="46" Text="20"  IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="283,156,0,0" Name="influencia12" VerticalAlignment="Top" Width="46"  Text="20" IsEnabled="False">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="70" />
+                <ComboBoxItem Content="80" />
+                <ComboBoxItem Content="90" />
+                <ComboBoxItem Content="100" />
+            </ComboBox>
+
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,6,0,0" Name="arma7" VerticalAlignment="Top" Width="46"  Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,36,0,0" Name="arma8" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,66,0,0" Name="arma9" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,96,0,0" Name="arma10" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,126,0,0" Name="arma11" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,156,0,0" Name="arma12" VerticalAlignment="Top" Width="46" Text="1" IsEnabled="False">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+            </ComboBox>
+
+        </Grid>
+    </Grid>
+</Window>

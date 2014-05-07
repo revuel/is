@@ -1,8 +1,8 @@
 ﻿<Window x:Class="paintball.Opciones"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Opciones" Height="692" Width="300" Loaded="Window_Loaded">
-    <Grid>
+        Title="Opciones" Height="685" Width="306" Loaded="Window_Loaded">
+    <Grid Height="648" Width="273">
         <GroupBox Header="Definir movimientos del jugador:" Height="421" HorizontalAlignment="Left" Margin="12,179,0,0" Name="groupBox1" VerticalAlignment="Top" Width="254" IsEnabled="False">
             <Grid>
                 <ComboBox Height="23" HorizontalAlignment="Left" Margin="104,17,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" />

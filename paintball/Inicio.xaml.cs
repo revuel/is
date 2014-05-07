@@ -34,7 +34,7 @@ namespace paintball
         // BOTÓN INICIO CON PARÁMETROS
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            var opcions = new Opciones();
+            var opcions = new OpcionesV2();
             opcions.Show();
             this.Close();
         }
@@ -143,5 +143,6 @@ namespace paintball
                 jugadores.Add(nuevo);
             }
         }
+
     }
 }

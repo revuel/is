@@ -4,25 +4,17 @@
 winexe
 C#
 .cs
-<<<<<<< HEAD
-C:\Documents and Settings\Miguel\is\paintball\obj\x86\Debug\
-=======
-C:\Users\Fer\is\paintball\obj\x86\Debug\
->>>>>>> ee53cbd70c3dfd36189eeea3e1ca674733ef6717
+E:\is\paintball\obj\x86\Debug\
 paintball
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
-C:\Documents and Settings\Miguel\is\paintball\App.xaml
-=======
-C:\Users\Fer\is\paintball\App.xaml
->>>>>>> ee53cbd70c3dfd36189eeea3e1ca674733ef6717
-31195068493
+E:\is\paintball\App.xaml
+4-653512140
 
-9-1998643950
+10-376831102
 12-1547151337
-MainWindow.xaml;Inicio.xaml;Opciones.xaml;
+MainWindow.xaml;Inicio.xaml;Opciones.xaml;OpcionesV2.xaml;
 
 False
 
