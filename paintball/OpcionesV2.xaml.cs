@@ -21,6 +21,10 @@ namespace paintball
     {
         List<Jugador> jugadores = new List<Jugador>();
         List<int> secmovimientos = new List<int>(); // Almacenamiento de los movimientos. (not working)
+<<<<<<< HEAD
+=======
+        int tacticaRojo = 2, tacticaAzul = 3;
+>>>>>>> rob
 
         Random rand = new Random();
 
@@ -251,7 +255,14 @@ namespace paintball
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             #region Configurar y añadir jugador 1 en caso de que esté activo
+=======
+            switch (tacticaRojo)
+            { 
+                case 1: //He dejado las que estaban default porque es libre y aun no esta implementado
+                   #region Configurar y añadir jugador 1 en caso de que esté activo
+>>>>>>> rob
             if (activo1.IsChecked==true)
             {
                 Jugador jugador1 = new Jugador();
@@ -265,9 +276,16 @@ namespace paintball
                 jugador1.setArma(int.Parse(arma1.Text));
                 //jugador1.setMovimientos
                 jugadores.Add(jugador1);
+<<<<<<< HEAD
             }
             #endregion
             #region Configurar y añadir jugador 2 en caso de que esté activo
+=======
+
+            }
+            #endregion
+                   #region Configurar y añadir jugador 2 en caso de que esté activo
+>>>>>>> rob
             if (activo2.IsChecked == true)
             {
                 Jugador jugador2 = new Jugador();
@@ -283,7 +301,11 @@ namespace paintball
                 jugadores.Add(jugador2);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 3 en caso de que esté activo
+=======
+                   #region Configurar y añadir jugador 3 en caso de que esté activo
+>>>>>>> rob
             if (activo3.IsChecked == true)
             {
                 Jugador jugador3 = new Jugador();
@@ -299,7 +321,11 @@ namespace paintball
                 jugadores.Add(jugador3);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 4 en caso de que esté activo
+=======
+                   #region Configurar y añadir jugador 4 en caso de que esté activo
+>>>>>>> rob
             if (activo4.IsChecked == true)
             {
                 Jugador jugador4 = new Jugador();
@@ -315,7 +341,11 @@ namespace paintball
                 jugadores.Add(jugador4);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 5 en caso de que esté activo
+=======
+                   #region Configurar y añadir jugador 5 en caso de que esté activo
+>>>>>>> rob
             if (activo5.IsChecked == true)
             {
                 Jugador jugador5 = new Jugador();
@@ -331,7 +361,11 @@ namespace paintball
                 jugadores.Add(jugador5);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 6 en caso de que esté activo
+=======
+                   #region Configurar y añadir jugador 6 en caso de que esté activo
+>>>>>>> rob
             if (activo6.IsChecked == true)
             {
                 Jugador jugador6 = new Jugador();
@@ -347,8 +381,413 @@ namespace paintball
                 jugadores.Add(jugador6);
             }
             #endregion
+<<<<<<< HEAD
 
             #region Configurar y añadir jugador 7 en caso de que esté activo
+=======
+                    break;
+                case 2:
+                    #region Configurar y añadir jugador 1 en caso de que esté activo
+            if (activo1.IsChecked==true)
+            {
+                Jugador jugador1 = new Jugador();
+                jugador1.setEquipo(0);
+                jugador1.setPosx(50);
+                jugador1.setPosy(50);
+                jugador1.setVivo(true);
+                jugador1.setId(nombre1.Text);
+                jugador1.setVision(int.Parse(vision1.Text));
+                jugador1.setInflu(int.Parse(influencia1.Text));
+                jugador1.setArma(int.Parse(arma1.Text));
+                //jugador1.setMovimientos
+                jugadores.Add(jugador1);
+
+            }
+            #endregion
+                    #region Configurar y añadir jugador 2 en caso de que esté activo
+            if (activo2.IsChecked == true)
+            {
+                Jugador jugador2 = new Jugador();
+                jugador2.setEquipo(0);
+                jugador2.setPosx(100);
+                jugador2.setPosy(100);
+                jugador2.setVivo(true);
+                jugador2.setId(nombre2.Text);
+                jugador2.setVision(int.Parse(vision2.Text));
+                jugador2.setInflu(int.Parse(influencia2.Text));
+                jugador2.setArma(int.Parse(arma2.Text));
+                //jugador2.setMovimientos
+                jugadores.Add(jugador2);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 3 en caso de que esté activo
+            if (activo3.IsChecked == true)
+            {
+                Jugador jugador3 = new Jugador();
+                jugador3.setEquipo(0);
+                jugador3.setPosx(150);
+                jugador3.setPosy(150);
+                jugador3.setVivo(true);
+                jugador3.setId(nombre3.Text);
+                jugador3.setVision(int.Parse(vision3.Text));
+                jugador3.setInflu(int.Parse(influencia3.Text));
+                jugador3.setArma(int.Parse(arma3.Text));
+                //jugador3.setMovimientos
+                jugadores.Add(jugador3);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 4 en caso de que esté activo
+            if (activo4.IsChecked == true)
+            {
+                Jugador jugador4 = new Jugador();
+                jugador4.setEquipo(0);
+                jugador4.setPosx(150);
+                jugador4.setPosy(200);
+                jugador4.setVivo(true);
+                jugador4.setId(nombre4.Text);
+                jugador4.setVision(int.Parse(vision4.Text));
+                jugador4.setInflu(int.Parse(influencia4.Text));
+                jugador4.setArma(int.Parse(arma4.Text));
+                //jugador6.setMovimientos
+                jugadores.Add(jugador4);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 5 en caso de que esté activo
+            if (activo5.IsChecked == true)
+            {
+                Jugador jugador5 = new Jugador();
+                jugador5.setEquipo(0);
+                jugador5.setPosx(100);
+                jugador5.setPosy(250);
+                jugador5.setVivo(true);
+                jugador5.setId(nombre5.Text);
+                jugador5.setVision(int.Parse(vision5.Text));
+                jugador5.setInflu(int.Parse(influencia5.Text));
+                jugador5.setArma(int.Parse(arma5.Text));
+                //jugador5.setMovimientos
+                jugadores.Add(jugador5);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 6 en caso de que esté activo
+            if (activo6.IsChecked == true)
+            {
+                Jugador jugador6 = new Jugador();
+                jugador6.setEquipo(0);
+                jugador6.setPosx(50);
+                jugador6.setPosy(300);
+                jugador6.setVivo(true);
+                jugador6.setId(nombre6.Text);
+                jugador6.setVision(int.Parse(vision6.Text));
+                jugador6.setInflu(int.Parse(influencia6.Text));
+                jugador6.setArma(int.Parse(arma6.Text));
+                //jugador6.setMovimientos
+                jugadores.Add(jugador6);
+            }
+            #endregion
+                    break;
+                case 3:
+                    #region Configurar y añadir jugador 1 en caso de que esté activo
+            if (activo1.IsChecked==true)
+            {
+                Jugador jugador1 = new Jugador();
+                jugador1.setEquipo(0);
+                jugador1.setPosx(150);
+                jugador1.setPosy(50);
+                jugador1.setVivo(true);
+                jugador1.setId(nombre1.Text);
+                jugador1.setVision(int.Parse(vision1.Text));
+                jugador1.setInflu(int.Parse(influencia1.Text));
+                jugador1.setArma(int.Parse(arma1.Text));
+                //jugador1.setMovimientos
+                jugadores.Add(jugador1);
+
+            }
+            #endregion
+                    #region Configurar y añadir jugador 2 en caso de que esté activo
+            if (activo2.IsChecked == true)
+            {
+                Jugador jugador2 = new Jugador();
+                jugador2.setEquipo(0);
+                jugador2.setPosx(100);
+                jugador2.setPosy(100);
+                jugador2.setVivo(true);
+                jugador2.setId(nombre2.Text);
+                jugador2.setVision(int.Parse(vision2.Text));
+                jugador2.setInflu(int.Parse(influencia2.Text));
+                jugador2.setArma(int.Parse(arma2.Text));
+                //jugador2.setMovimientos
+                jugadores.Add(jugador2);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 3 en caso de que esté activo
+            if (activo3.IsChecked == true)
+            {
+                Jugador jugador3 = new Jugador();
+                jugador3.setEquipo(0);
+                jugador3.setPosx(50);
+                jugador3.setPosy(150);
+                jugador3.setVivo(true);
+                jugador3.setId(nombre3.Text);
+                jugador3.setVision(int.Parse(vision3.Text));
+                jugador3.setInflu(int.Parse(influencia3.Text));
+                jugador3.setArma(int.Parse(arma3.Text));
+                //jugador3.setMovimientos
+                jugadores.Add(jugador3);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 4 en caso de que esté activo
+            if (activo4.IsChecked == true)
+            {
+                Jugador jugador4 = new Jugador();
+                jugador4.setEquipo(0);
+                jugador4.setPosx(50);
+                jugador4.setPosy(200);
+                jugador4.setVivo(true);
+                jugador4.setId(nombre4.Text);
+                jugador4.setVision(int.Parse(vision4.Text));
+                jugador4.setInflu(int.Parse(influencia4.Text));
+                jugador4.setArma(int.Parse(arma4.Text));
+                //jugador6.setMovimientos
+                jugadores.Add(jugador4);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 5 en caso de que esté activo
+            if (activo5.IsChecked == true)
+            {
+                Jugador jugador5 = new Jugador();
+                jugador5.setEquipo(0);
+                jugador5.setPosx(100);
+                jugador5.setPosy(250);
+                jugador5.setVivo(true);
+                jugador5.setId(nombre5.Text);
+                jugador5.setVision(int.Parse(vision5.Text));
+                jugador5.setInflu(int.Parse(influencia5.Text));
+                jugador5.setArma(int.Parse(arma5.Text));
+                //jugador5.setMovimientos
+                jugadores.Add(jugador5);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 6 en caso de que esté activo
+            if (activo6.IsChecked == true)
+            {
+                Jugador jugador6 = new Jugador();
+                jugador6.setEquipo(0);
+                jugador6.setPosx(150);
+                jugador6.setPosy(300);
+                jugador6.setVivo(true);
+                jugador6.setId(nombre6.Text);
+                jugador6.setVision(int.Parse(vision6.Text));
+                jugador6.setInflu(int.Parse(influencia6.Text));
+                jugador6.setArma(int.Parse(arma6.Text));
+                //jugador6.setMovimientos
+                jugadores.Add(jugador6);
+            }
+            #endregion
+                    break;
+            }
+               
+            switch(tacticaAzul)
+            {
+                case 1:
+                    #region Configurar y añadir jugador 7 en caso de que esté activo
+            if (activo7.IsChecked == true)
+            {
+                Jugador jugador7 = new Jugador();
+                jugador7.setEquipo(1);
+                jugador7.setPosx(725);
+                jugador7.setPosy(50);
+                jugador7.setVivo(true);
+                jugador7.setId(nombre7.Text);
+                jugador7.setVision(int.Parse(vision7.Text));
+                jugador7.setInflu(int.Parse(influencia7.Text));
+                jugador7.setArma(int.Parse(arma7.Text));
+                //jugador7.setMovimientos
+                jugadores.Add(jugador7);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 8 en caso de que esté activo
+            if (activo8.IsChecked == true)
+            {
+                Jugador jugador8 = new Jugador();
+                jugador8.setEquipo(1);
+                jugador8.setPosx(675);
+                jugador8.setPosy(100);
+                jugador8.setVivo(true);
+                jugador8.setId(nombre8.Text);
+                jugador8.setVision(int.Parse(vision8.Text));
+                jugador8.setInflu(int.Parse(influencia8.Text));
+                jugador8.setArma(int.Parse(arma8.Text));
+                //jugador8.setMovimientos
+                jugadores.Add(jugador8);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 9 en caso de que esté activo
+            if (activo9.IsChecked == true)
+            {
+                Jugador jugador9 = new Jugador();
+                jugador9.setEquipo(1);
+                jugador9.setPosx(625);
+                jugador9.setPosy(150);
+                jugador9.setVivo(true);
+                jugador9.setId(nombre9.Text);
+                jugador9.setVision(int.Parse(vision9.Text));
+                jugador9.setInflu(int.Parse(influencia9.Text));
+                jugador9.setArma(int.Parse(arma9.Text));
+                //jugador9.setMovimientos
+                jugadores.Add(jugador9);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 10 en caso de que esté activo
+            if (activo10.IsChecked == true)
+            {
+                Jugador jugador10 = new Jugador();
+                jugador10.setEquipo(1);
+                jugador10.setPosx(625);
+                jugador10.setPosy(200);
+                jugador10.setVivo(true);
+                jugador10.setId(nombre10.Text);
+                jugador10.setVision(int.Parse(vision10.Text));
+                jugador10.setInflu(int.Parse(influencia10.Text));
+                jugador10.setArma(int.Parse(arma10.Text));
+                //jugador10.setMovimientos
+                jugadores.Add(jugador10);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 11 en caso de que esté activo
+            if (activo11.IsChecked == true)
+            {
+                Jugador jugador11 = new Jugador();
+                jugador11.setEquipo(1);
+                jugador11.setPosx(675);
+                jugador11.setPosy(250);
+                jugador11.setVivo(true);
+                jugador11.setId(nombre11.Text);
+                jugador11.setVision(int.Parse(vision11.Text));
+                jugador11.setInflu(int.Parse(influencia11.Text));
+                jugador11.setArma(int.Parse(arma11.Text));
+                //jugador1.setMovimientos
+                jugadores.Add(jugador11);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 12 en caso de que esté activo
+            if (activo12.IsChecked == true)
+            {
+                Jugador jugador12 = new Jugador();
+                jugador12.setEquipo(1);
+                jugador12.setPosx(725);
+                jugador12.setPosy(300);
+                jugador12.setVivo(true);
+                jugador12.setId(nombre12.Text);
+                jugador12.setVision(int.Parse(vision12.Text));
+                jugador12.setInflu(int.Parse(influencia12.Text));
+                jugador12.setArma(int.Parse(arma12.Text));
+                //jugador12.setMovimientos
+                jugadores.Add(jugador12);
+            }
+            #endregion
+                    break;
+                case 2:
+                    #region Configurar y añadir jugador 7 en caso de que esté activo
+            if (activo7.IsChecked == true)
+            {
+                Jugador jugador7 = new Jugador();
+                jugador7.setEquipo(1);
+                jugador7.setPosx(725);
+                jugador7.setPosy(50);
+                jugador7.setVivo(true);
+                jugador7.setId(nombre7.Text);
+                jugador7.setVision(int.Parse(vision7.Text));
+                jugador7.setInflu(int.Parse(influencia7.Text));
+                jugador7.setArma(int.Parse(arma7.Text));
+                //jugador7.setMovimientos
+                jugadores.Add(jugador7);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 8 en caso de que esté activo
+            if (activo8.IsChecked == true)
+            {
+                Jugador jugador8 = new Jugador();
+                jugador8.setEquipo(1);
+                jugador8.setPosx(675);
+                jugador8.setPosy(100);
+                jugador8.setVivo(true);
+                jugador8.setId(nombre8.Text);
+                jugador8.setVision(int.Parse(vision8.Text));
+                jugador8.setInflu(int.Parse(influencia8.Text));
+                jugador8.setArma(int.Parse(arma8.Text));
+                //jugador8.setMovimientos
+                jugadores.Add(jugador8);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 9 en caso de que esté activo
+            if (activo9.IsChecked == true)
+            {
+                Jugador jugador9 = new Jugador();
+                jugador9.setEquipo(1);
+                jugador9.setPosx(625);
+                jugador9.setPosy(150);
+                jugador9.setVivo(true);
+                jugador9.setId(nombre9.Text);
+                jugador9.setVision(int.Parse(vision9.Text));
+                jugador9.setInflu(int.Parse(influencia9.Text));
+                jugador9.setArma(int.Parse(arma9.Text));
+                //jugador9.setMovimientos
+                jugadores.Add(jugador9);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 10 en caso de que esté activo
+            if (activo10.IsChecked == true)
+            {
+                Jugador jugador10 = new Jugador();
+                jugador10.setEquipo(1);
+                jugador10.setPosx(625);
+                jugador10.setPosy(200);
+                jugador10.setVivo(true);
+                jugador10.setId(nombre10.Text);
+                jugador10.setVision(int.Parse(vision10.Text));
+                jugador10.setInflu(int.Parse(influencia10.Text));
+                jugador10.setArma(int.Parse(arma10.Text));
+                //jugador10.setMovimientos
+                jugadores.Add(jugador10);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 11 en caso de que esté activo
+            if (activo11.IsChecked == true)
+            {
+                Jugador jugador11 = new Jugador();
+                jugador11.setEquipo(1);
+                jugador11.setPosx(675);
+                jugador11.setPosy(250);
+                jugador11.setVivo(true);
+                jugador11.setId(nombre11.Text);
+                jugador11.setVision(int.Parse(vision11.Text));
+                jugador11.setInflu(int.Parse(influencia11.Text));
+                jugador11.setArma(int.Parse(arma11.Text));
+                //jugador1.setMovimientos
+                jugadores.Add(jugador11);
+            }
+            #endregion
+                    #region Configurar y añadir jugador 12 en caso de que esté activo
+            if (activo12.IsChecked == true)
+            {
+                Jugador jugador12 = new Jugador();
+                jugador12.setEquipo(1);
+                jugador12.setPosx(725);
+                jugador12.setPosy(300);
+                jugador12.setVivo(true);
+                jugador12.setId(nombre12.Text);
+                jugador12.setVision(int.Parse(vision12.Text));
+                jugador12.setInflu(int.Parse(influencia12.Text));
+                jugador12.setArma(int.Parse(arma12.Text));
+                //jugador12.setMovimientos
+                jugadores.Add(jugador12);
+            }
+            #endregion
+                    
+                    break;
+                case 3:
+                    #region Configurar y añadir jugador 7 en caso de que esté activo
+>>>>>>> rob
             if (activo7.IsChecked == true)
             {
                 Jugador jugador7 = new Jugador();
@@ -364,7 +803,11 @@ namespace paintball
                 jugadores.Add(jugador7);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 8 en caso de que esté activo
+=======
+                    #region Configurar y añadir jugador 8 en caso de que esté activo
+>>>>>>> rob
             if (activo8.IsChecked == true)
             {
                 Jugador jugador8 = new Jugador();
@@ -380,7 +823,11 @@ namespace paintball
                 jugadores.Add(jugador8);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 9 en caso de que esté activo
+=======
+                    #region Configurar y añadir jugador 9 en caso de que esté activo
+>>>>>>> rob
             if (activo9.IsChecked == true)
             {
                 Jugador jugador9 = new Jugador();
@@ -396,7 +843,11 @@ namespace paintball
                 jugadores.Add(jugador9);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 10 en caso de que esté activo
+=======
+                    #region Configurar y añadir jugador 10 en caso de que esté activo
+>>>>>>> rob
             if (activo10.IsChecked == true)
             {
                 Jugador jugador10 = new Jugador();
@@ -412,7 +863,11 @@ namespace paintball
                 jugadores.Add(jugador10);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 11 en caso de que esté activo
+=======
+                    #region Configurar y añadir jugador 11 en caso de que esté activo
+>>>>>>> rob
             if (activo11.IsChecked == true)
             {
                 Jugador jugador11 = new Jugador();
@@ -428,8 +883,13 @@ namespace paintball
                 jugadores.Add(jugador11);
             }
             #endregion
+<<<<<<< HEAD
             #region Configurar y añadir jugador 12 en caso de que esté activo
             if (activo4.IsChecked == true)
+=======
+                    #region Configurar y añadir jugador 12 en caso de que esté activo
+            if (activo12.IsChecked == true)
+>>>>>>> rob
             {
                 Jugador jugador12 = new Jugador();
                 jugador12.setEquipo(1);
@@ -444,11 +904,50 @@ namespace paintball
                 jugadores.Add(jugador12);
             }
             #endregion
+<<<<<<< HEAD
+=======
+                    break;
+                
+        }
+>>>>>>> rob
             var batalla = new MainWindow(jugadores);
             batalla.Show();
             this.Close();
         }
 
+<<<<<<< HEAD
+=======
+        
+        private void rbLibreRojo_Checked(object sender, RoutedEventArgs e)
+        {
+            tacticaRojo = 1;
+        }
+
+        private void rbEstacaRojo_Checked(object sender, RoutedEventArgs e)
+        {
+            tacticaRojo = 2;
+        }
+
+        private void rbEstacaiRojo_Checked(object sender, RoutedEventArgs e)
+        {
+            tacticaRojo = 3;
+        }
+
+        private void rbLibreAzul_Checked(object sender, RoutedEventArgs e)
+        {
+            tacticaAzul = 1;
+        }
+
+        private void rbEstacaA_Checked(object sender, RoutedEventArgs e)
+        {
+            tacticaAzul = 2;
+        }
+
+        private void rbEstacaiAzul_Checked(object sender, RoutedEventArgs e)
+        {
+            tacticaAzul = 3;
+        }
+>>>>>>> rob
 
     }
 }

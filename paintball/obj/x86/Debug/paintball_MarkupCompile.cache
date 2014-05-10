@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 E:\is\paintball\obj\x86\Debug\
+=======
+C:\Users\Roberto\is\paintball\obj\x86\Debug\
+>>>>>>> rob
 paintball
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 E:\is\paintball\App.xaml
 4-653512140
 
 91236638401
 12-1547151337
+=======
+C:\Users\Roberto\is\paintball\App.xaml
+4-653512140
+
+91236638401
+12-1381780322
+>>>>>>> rob
 MainWindow.xaml;Inicio.xaml;Opciones.xaml;OpcionesV2.xaml;
 
 False

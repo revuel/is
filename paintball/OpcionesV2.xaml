@@ -210,15 +210,29 @@
                 <ComboBoxItem Content="3" />
                 <ComboBoxItem Content="4" />
             </ComboBox>
+<<<<<<< HEAD
+=======
+            <RadioButton Content="Libre" Height="16" HorizontalAlignment="Left" Margin="467,43,0,0" Name="rbLibreRojo" VerticalAlignment="Top" Checked="rbLibreRojo_Checked" />
+            <RadioButton Content="Estaca" Height="16" HorizontalAlignment="Left" Margin="610,43,0,0" Name="rbEstacaRojo" VerticalAlignment="Top" Checked="rbEstacaRojo_Checked" />
+            <RadioButton Content="Estaca Invertida" Height="16" HorizontalAlignment="Left" Margin="742,43,0,0" Name="rbEstacaiRojo" VerticalAlignment="Top" Checked="rbEstacaiRojo_Checked" />
+>>>>>>> rob
         </Grid>
         <Grid Height="187" HorizontalAlignment="Left" Margin="13,228,0,0" Name="grid2" VerticalAlignment="Top" Width="853">
 
             <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,10,0,0" Name="activo7" VerticalAlignment="Top" Click="activo7_Click"/>
+<<<<<<< HEAD
             <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,40,0,0" Name="activo8" VerticalAlignment="Top" Click="activo8_Click"/>
             <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,70,0,0" Name="activo9" VerticalAlignment="Top" Click="activo9_Click"/>
             <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,100,0,0" Name="activo10" VerticalAlignment="Top" Click="activo10_Click"/>
             <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,130,0,0" Name="activo11" VerticalAlignment="Top" Click="activo11_Click"/>
             <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,160,0,0" Name="activo12" VerticalAlignment="Top" Click="activo12_Click"/>
+=======
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,0,0,131" Name="activo8" VerticalAlignment="Bottom" Click="activo8_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,0,0,101" Name="activo9" VerticalAlignment="Bottom" Click="activo9_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,0,0,71" Name="activo10" VerticalAlignment="Bottom" Click="activo10_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,0,0,41" Name="activo11" VerticalAlignment="Bottom" Click="activo11_Click"/>
+            <CheckBox Height="16" HorizontalAlignment="Left" Margin="6,160,0,0" Name="activo12" VerticalAlignment="Top" Click="activo12_Click" />
+>>>>>>> rob
 
             <TextBox Height="23" Text="Jugador 7" HorizontalAlignment="Left" Margin="39,6,0,0" Name="nombre7" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
             <TextBox Height="23" Text="Jugador 8" HorizontalAlignment="Left" Margin="39,36,0,0" Name="nombre8" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
@@ -409,7 +423,13 @@
                 <ComboBoxItem Content="3" />
                 <ComboBoxItem Content="4" />
             </ComboBox>
+<<<<<<< HEAD
 
+=======
+            <RadioButton Content="Estaca" Height="16" HorizontalAlignment="Left" Margin="609,51,0,0" Name="rbEstacaAzul" VerticalAlignment="Top" Checked="rbEstacaA_Checked" />
+            <RadioButton Content="Libre" Height="16" HorizontalAlignment="Left" Margin="466,51,0,0" Name="rbLibreAzul" VerticalAlignment="Top" Checked="rbLibreAzul_Checked" />
+            <RadioButton Content="Estaca Invertida" Height="16" HorizontalAlignment="Right" Margin="0,51,13,0" Name="rbEstacaiAzul" VerticalAlignment="Top" Checked="rbEstacaiAzul_Checked" />
+>>>>>>> rob
         </Grid>
     </Grid>
 </Window>
