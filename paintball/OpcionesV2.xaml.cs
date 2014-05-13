@@ -282,7 +282,7 @@ namespace paintball
             { 
                 case 1: //He dejado las que estaban default porque es libre y aun no esta implementado
                     for (int i = 1; i < numJugRojo; i++)
-                        #region Configurar y añadir jugador 1 en caso de que esté activo
+                   #region Configurar y añadir jugador 1 en caso de que esté activo
                         if (activo1.IsChecked == true)
                         {
                             Jugador jugador1 = new Jugador();
@@ -884,7 +884,7 @@ namespace paintball
             this.Close();
         }
 
-        
+        #region chekcers de las tácticas
         private void rbLibreRojo_Checked(object sender, RoutedEventArgs e)
         {
             tacticaRojo = 1;
@@ -914,6 +914,6 @@ namespace paintball
         {
             tacticaAzul = 3;
         }
-
+        #endregion
     }
 }

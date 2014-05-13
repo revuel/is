@@ -9,9 +9,9 @@
         <Label Content="Activo" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="label1" VerticalAlignment="Top" FontSize="16" FontWeight="Black" />
         <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="80,0,0,0" Name="label2" VerticalAlignment="Top" FontSize="16" FontWeight="Black" />
         <Label Content="Visión" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="190,0,0,0" Name="label3" VerticalAlignment="Top" />
-        <Label Content="Influencia" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Right" Margin="0,0,515,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="Detección" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Right" Margin="0,0,515,0" Name="label4" VerticalAlignment="Top" />
         <Label Content="Arma" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="391,0,0,0" Name="label5" VerticalAlignment="Top" />
-        <Label Content="Movimiento" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="611,0,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Táctica inicial" FontSize="16" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="611,0,0,0" Name="label6" VerticalAlignment="Top" />
         <Grid Height="187" HorizontalAlignment="Left" Margin="12,0,0,239" Name="grid1" VerticalAlignment="Bottom" Width="854">
             
             <CheckBox  Height="16" HorizontalAlignment="Left" Margin="6,10,0,0" Name="activo1" VerticalAlignment="Top" Click="activo1_Click" />
@@ -211,8 +211,8 @@
                 <ComboBoxItem Content="4" />
             </ComboBox>
             <RadioButton Content="Libre" Height="16" HorizontalAlignment="Left" Margin="467,43,0,0" Name="rbLibreRojo" VerticalAlignment="Top" Checked="rbLibreRojo_Checked" />
-            <RadioButton Content="Estaca" Height="16" HorizontalAlignment="Left" Margin="610,43,0,0" Name="rbEstacaRojo" VerticalAlignment="Top" Checked="rbEstacaRojo_Checked" />
-            <RadioButton Content="Estaca Invertida" Height="16" HorizontalAlignment="Left" Margin="742,43,0,0" Name="rbEstacaiRojo" VerticalAlignment="Top" Checked="rbEstacaiRojo_Checked" />
+            <RadioButton Content="Punta de flecha" Height="16" HorizontalAlignment="Left" Margin="588,43,0,0" Name="rbEstacaRojo" VerticalAlignment="Top" Checked="rbEstacaRojo_Checked" />
+            <RadioButton Content="Punta invertida" Height="16" HorizontalAlignment="Left" Margin="742,43,0,0" Name="rbEstacaiRojo" VerticalAlignment="Top" Checked="rbEstacaiRojo_Checked" />
         </Grid>
         <Grid Height="187" HorizontalAlignment="Left" Margin="13,228,0,0" Name="grid2" VerticalAlignment="Top" Width="853">
 
@@ -412,9 +412,9 @@
                 <ComboBoxItem Content="3" />
                 <ComboBoxItem Content="4" />
             </ComboBox>
-            <RadioButton Content="Estaca" Height="16" HorizontalAlignment="Left" Margin="609,51,0,0" Name="rbEstacaAzul" VerticalAlignment="Top" Checked="rbEstacaA_Checked" />
+            <RadioButton Content="Punta de flecha" Height="16" HorizontalAlignment="Left" Margin="587,51,0,0" Name="rbEstacaAzul" VerticalAlignment="Top" Checked="rbEstacaA_Checked" />
             <RadioButton Content="Libre" Height="16" HorizontalAlignment="Left" Margin="466,51,0,0" Name="rbLibreAzul" VerticalAlignment="Top" Checked="rbLibreAzul_Checked" />
-            <RadioButton Content="Estaca Invertida" Height="16" HorizontalAlignment="Right" Margin="0,51,13,0" Name="rbEstacaiAzul" VerticalAlignment="Top" Checked="rbEstacaiAzul_Checked" />
+            <RadioButton Content="Punta invertida" Height="16" HorizontalAlignment="Right" Margin="0,51,13,0" Name="rbEstacaiAzul" VerticalAlignment="Top" Checked="rbEstacaiAzul_Checked" />
         </Grid>
     </Grid>
 </Window>
