@@ -22,6 +22,7 @@ namespace paintball
         List<Jugador> jugadores = new List<Jugador>();
         List<int> secmovimientos = new List<int>(); // Almacenamiento de los movimientos. (not working)
         int tacticaRojo = 2, tacticaAzul = 3;
+        int numJugRojo = 0, numJugAzul = 0;
 
         Random rand = new Random();
 
@@ -41,6 +42,7 @@ namespace paintball
                 vision1.IsEnabled = true;
                 influencia1.IsEnabled = true;
                 arma1.IsEnabled = true;
+                numJugRojo++;
             }
             else//Si están habilitadas...
             {
@@ -48,6 +50,7 @@ namespace paintball
                 vision1.IsEnabled = false;
                 influencia1.IsEnabled = false;
                 arma1.IsEnabled = false;
+                numJugRojo--;
             }
         }
 
@@ -59,6 +62,7 @@ namespace paintball
                 vision2.IsEnabled = true;
                 influencia2.IsEnabled = true;
                 arma2.IsEnabled = true;
+                numJugRojo++;
             }
             else
             {
@@ -66,6 +70,7 @@ namespace paintball
                 vision2.IsEnabled = false;
                 influencia2.IsEnabled = false;
                 arma2.IsEnabled = false;
+                numJugRojo--;
             }
         }
 
@@ -77,6 +82,7 @@ namespace paintball
                 vision3.IsEnabled = true;
                 influencia3.IsEnabled = true;
                 arma3.IsEnabled = true;
+                numJugRojo++;
             }
             else
             {
@@ -84,6 +90,7 @@ namespace paintball
                 vision3.IsEnabled = false;
                 influencia3.IsEnabled = false;
                 arma3.IsEnabled = false;
+                numJugRojo--;
             }
         }
 
@@ -95,6 +102,7 @@ namespace paintball
                 vision4.IsEnabled = true;
                 influencia4.IsEnabled = true;
                 arma4.IsEnabled = true;
+                numJugRojo++;
             }
             else
             {
@@ -102,6 +110,7 @@ namespace paintball
                 vision4.IsEnabled = false;
                 influencia4.IsEnabled = false;
                 arma4.IsEnabled = false;
+                numJugRojo--;
             }
         }
 
@@ -113,6 +122,7 @@ namespace paintball
                 vision5.IsEnabled = true;
                 influencia5.IsEnabled = true;
                 arma5.IsEnabled = true;
+                numJugRojo++;
             }
             else
             {
@@ -120,6 +130,7 @@ namespace paintball
                 vision5.IsEnabled = false;
                 influencia5.IsEnabled = false;
                 arma5.IsEnabled = false;
+                numJugRojo--;
             }
         }
 
@@ -131,6 +142,7 @@ namespace paintball
                 vision6.IsEnabled = true;
                 influencia6.IsEnabled = true;
                 arma6.IsEnabled = true;
+                numJugRojo++;
             }
             else
             {
@@ -138,6 +150,7 @@ namespace paintball
                 vision6.IsEnabled = false;
                 influencia6.IsEnabled = false;
                 arma6.IsEnabled = false;
+                numJugRojo--;
             }
         }
 
@@ -149,6 +162,8 @@ namespace paintball
                 vision7.IsEnabled = true;
                 influencia7.IsEnabled = true;
                 arma7.IsEnabled = true;
+
+                numJugAzul++;
             }
             else
             {
@@ -156,6 +171,7 @@ namespace paintball
                 vision7.IsEnabled = false;
                 influencia7.IsEnabled = false;
                 arma7.IsEnabled = false;
+                numJugAzul--;
             }
         }
 
@@ -167,6 +183,7 @@ namespace paintball
                 vision8.IsEnabled = true;
                 influencia8.IsEnabled = true;
                 arma8.IsEnabled = true;
+                numJugAzul++;
             }
             else
             {
@@ -174,6 +191,7 @@ namespace paintball
                 vision8.IsEnabled = false;
                 influencia8.IsEnabled = false;
                 arma8.IsEnabled = false;
+                numJugAzul--;
             }
         }
 
@@ -185,6 +203,7 @@ namespace paintball
                 vision9.IsEnabled = true;
                 influencia9.IsEnabled = true;
                 arma9.IsEnabled = true;
+                numJugAzul++;
             }
             else
             {
@@ -192,6 +211,7 @@ namespace paintball
                 vision9.IsEnabled = false;
                 influencia9.IsEnabled = false;
                 arma9.IsEnabled = false;
+                numJugAzul--;
             }
         }
 
@@ -203,6 +223,7 @@ namespace paintball
                 vision10.IsEnabled = true;
                 influencia10.IsEnabled = true;
                 arma10.IsEnabled = true;
+                numJugAzul++;
             }
             else
             {
@@ -210,6 +231,7 @@ namespace paintball
                 vision10.IsEnabled = false;
                 influencia10.IsEnabled = false;
                 arma10.IsEnabled = false;
+                numJugAzul--;
             }
         }
 
@@ -221,6 +243,7 @@ namespace paintball
                 vision11.IsEnabled = true;
                 influencia11.IsEnabled = true;
                 arma11.IsEnabled = true;
+                numJugAzul++;
             }
             else
             {
@@ -228,6 +251,7 @@ namespace paintball
                 vision11.IsEnabled = false;
                 influencia11.IsEnabled = false;
                 arma11.IsEnabled = false;
+                numJugAzul--;
             }
         }
 
@@ -239,6 +263,7 @@ namespace paintball
                 vision12.IsEnabled = true;
                 influencia12.IsEnabled = true;
                 arma12.IsEnabled = true;
+                numJugAzul++;
             }
             else
             {
@@ -246,6 +271,7 @@ namespace paintball
                 vision12.IsEnabled = false;
                 influencia12.IsEnabled = false;
                 arma12.IsEnabled = false;
+                numJugAzul--;
             }
         }
         #endregion
@@ -255,22 +281,23 @@ namespace paintball
             switch (tacticaRojo)
             { 
                 case 1: //He dejado las que estaban default porque es libre y aun no esta implementado
-                   #region Configurar y añadir jugador 1 en caso de que esté activo
-            if (activo1.IsChecked==true)
-            {
-                Jugador jugador1 = new Jugador();
-                jugador1.setEquipo(0);
-                jugador1.setPosx(50);
-                jugador1.setPosy(50);
-                jugador1.setVivo(true);
-                jugador1.setId(nombre1.Text);
-                jugador1.setVision(int.Parse(vision1.Text));
-                jugador1.setInflu(int.Parse(influencia1.Text));
-                jugador1.setArma(int.Parse(arma1.Text));
-                //jugador1.setMovimientos
-                jugadores.Add(jugador1);
+                    for (int i = 1; i < numJugRojo; i++)
+                        #region Configurar y añadir jugador 1 en caso de que esté activo
+                        if (activo1.IsChecked == true)
+                        {
+                            Jugador jugador1 = new Jugador();
+                            jugador1.setEquipo(0);
+                            jugador1.setPosx(50);
+                            jugador1.setPosy(50);
+                            jugador1.setVivo(true);
+                            jugador1.setId(nombre1.Text);
+                            jugador1.setVision(int.Parse(vision1.Text));
+                            jugador1.setInflu(int.Parse(influencia1.Text));
+                            jugador1.setArma(int.Parse(arma1.Text));
+                            //jugador1.setMovimientos
+                            jugadores.Add(jugador1);
 
-            }
+                        }
             #endregion
                    #region Configurar y añadir jugador 2 en caso de que esté activo
             if (activo2.IsChecked == true)
@@ -353,7 +380,7 @@ namespace paintball
             }
             #endregion
                     break;
-                case 2:
+                case 2: //Punta de flecha
                     #region Configurar y añadir jugador 1 en caso de que esté activo
             if (activo1.IsChecked==true)
             {
@@ -452,7 +479,7 @@ namespace paintball
             }
             #endregion
                     break;
-                case 3:
+                case 3: //punta de flecha inversa
                     #region Configurar y añadir jugador 1 en caso de que esté activo
             if (activo1.IsChecked==true)
             {
@@ -555,7 +582,7 @@ namespace paintball
                
             switch(tacticaAzul)
             {
-                case 1:
+                case 1: //posicionamiento libre
                     #region Configurar y añadir jugador 7 en caso de que esté activo
             if (activo7.IsChecked == true)
             {
@@ -653,7 +680,7 @@ namespace paintball
             }
             #endregion
                     break;
-                case 2:
+                case 2: //Punta de flecha
                     #region Configurar y añadir jugador 7 en caso de que esté activo
             if (activo7.IsChecked == true)
             {
@@ -752,13 +779,13 @@ namespace paintball
             #endregion
                     
                     break;
-                case 3:
+                case 3: //Punta de flecha inversa
                     #region Configurar y añadir jugador 7 en caso de que esté activo
             if (activo7.IsChecked == true)
             {
                 Jugador jugador7 = new Jugador();
                 jugador7.setEquipo(1);
-                jugador7.setPosx(575);
+                jugador7.setPosx(625);
                 jugador7.setPosy(50);
                 jugador7.setVivo(true);
                 jugador7.setId(nombre7.Text);
@@ -774,8 +801,8 @@ namespace paintball
             {
                 Jugador jugador8 = new Jugador();
                 jugador8.setEquipo(1);
-                jugador8.setPosx(575);
-                jugador8.setPosy(175);
+                jugador8.setPosx(675);
+                jugador8.setPosy(100);
                 jugador8.setVivo(true);
                 jugador8.setId(nombre8.Text);
                 jugador8.setVision(int.Parse(vision8.Text));
@@ -790,8 +817,8 @@ namespace paintball
             {
                 Jugador jugador9 = new Jugador();
                 jugador9.setEquipo(1);
-                jugador9.setPosx(575);
-                jugador9.setPosy(300);
+                jugador9.setPosx(725);
+                jugador9.setPosy(150);
                 jugador9.setVivo(true);
                 jugador9.setId(nombre9.Text);
                 jugador9.setVision(int.Parse(vision9.Text));
@@ -806,8 +833,8 @@ namespace paintball
             {
                 Jugador jugador10 = new Jugador();
                 jugador10.setEquipo(1);
-                jugador10.setPosx(475);
-                jugador10.setPosy(100);
+                jugador10.setPosx(725);
+                jugador10.setPosy(200);
                 jugador10.setVivo(true);
                 jugador10.setId(nombre10.Text);
                 jugador10.setVision(int.Parse(vision10.Text));
@@ -822,7 +849,7 @@ namespace paintball
             {
                 Jugador jugador11 = new Jugador();
                 jugador11.setEquipo(1);
-                jugador11.setPosx(475);
+                jugador11.setPosx(675);
                 jugador11.setPosy(250);
                 jugador11.setVivo(true);
                 jugador11.setId(nombre11.Text);
@@ -838,8 +865,8 @@ namespace paintball
             {
                 Jugador jugador12 = new Jugador();
                 jugador12.setEquipo(1);
-                jugador12.setPosx(475);
-                jugador12.setPosy(175);
+                jugador12.setPosx(625);
+                jugador12.setPosy(300);
                 jugador12.setVivo(true);
                 jugador12.setId(nombre12.Text);
                 jugador12.setVision(int.Parse(vision12.Text));
